@@ -1,0 +1,37 @@
+7-zip
+openjdk
+- setup JAVA_HOME
+maven
+- setup M2_HOME
+intellij
+- lombok plugin
+
+
+from the tutorial
+https://spring.io/guides/tutorials/react-and-spring-data-rest/#react-and-spring-data-rest-part-4
+
+- we download and extracted the sources
+Open intellij and import the project above
+select import using maven
+
+
+(optional minify js to make your js scripts smaller)
+
+basic queries (2.3.2 Query creation) and custom queries (2.3.4 Using @Query)
+https://docs.spring.io/spring-data/jpa/docs/1.4.3.RELEASE/reference/html/jpa.repositories.html
+
+###### CHECK HOW TO ENABLE FILTERING( SEARCHES, ETC) ######
+
+webpack.config.js - packs all your  javascript into a single file (in this case, we called it bundle.js)
+
+Xupes_Test_DB
+
+xupes_test/Changeme1
+
+spring security with ldap
+https://spring.io/guides/gs/authenticating-ldap/
+
+
+spring security
+https://docs.spring.io/spring-security/site/docs/current/reference/html/el-access.html
+https://docs.spring.io/spring-security/site/docs/3.0.x/reference/el-access.html
