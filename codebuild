@@ -1,0 +1,19 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      java: corretto11
+  build:
+    commands:
+      - cd $CODEBUILD_SRC_DIR_darwin_scoring_domain
+      - ./gradlew clean test build install
+      - cd $CODEBUILD_SRC_DIR_darwin_kinesis
+      - ./gradlew clean build install
+      - cd $CODEBUILD_SRC_DIR_darwin_cdl_xsd
+      - ./gradlew cleanJaxb2SourcesDir generateJaxb2Classes
+      - cd src
+      - chmod 774 adjust_pojos.sh
+      - ./adjust_pojos.sh
+      - cd ..
+      - ./gradlew build install
